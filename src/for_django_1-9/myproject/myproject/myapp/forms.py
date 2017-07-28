@@ -2,8 +2,10 @@
 
 from django import forms
 
+from . import models
 
-class DocumentForm(forms.Form):
-    docfile = forms.FileField(
-        label='Select a file'
-    )
+
+class DocumentForm(forms.ModelForm):
+    class Meta:
+        model = models.Document
+        fields = ['docfile']
