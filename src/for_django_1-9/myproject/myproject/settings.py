@@ -38,7 +38,8 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'myproject.myapp'
+    'myproject.myapp',
+    'django_antivirus_field'
 )
 
 MIDDLEWARE_CLASSES = (
@@ -111,3 +112,4 @@ MEDIA_URL = '/media/'
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
 STATIC_URL = '/static/'
+CLAMAV_ACTIVE = True
